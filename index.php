@@ -6,7 +6,6 @@
  * @package WordPress
  */
 
-//phpinfo();exit;
 /**
  * Tells WordPress to load the WordPress theme and output it.
  *
