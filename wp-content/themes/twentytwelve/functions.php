@@ -1,9 +1,9 @@
 <?php
 add_action('login_enqueue_scripts','login_protection');  
 function login_protection(){  
-        if($_GET['login'] != 'admin'){
-        wp_redirect(get_bloginfo('url'));
-    }  
+        if(isset($_GET['login']) && $_GET['login'] != 'admin'){
+        	wp_redirect(get_bloginfo('url'));
+    	}  
 }
 /**
  * Twenty Twelve functions and definitions
